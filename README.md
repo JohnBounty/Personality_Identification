@@ -1,4 +1,6 @@
-# Personality_Identification
+# Personality Identification
+
+## General Description
 
 The given repository contains code and documentation that were produced in the scope of a study on a possibility of identification of personality based on the writing example. Principle components of the project:
 
@@ -9,3 +11,10 @@ The given repository contains code and documentation that were produced in the s
 * Documentation.
 
 All in all, the project presents a theoretical study (supported with extensive list of references), a set of experiments on various techniques of **unsupervised learning**, data extraction and processing pipeline and a final deployment as a part of **end-to-end** development.
+
+## Miscellaneous information
+
+- To launch the code, necessary dependencies must be installed (see requirements.txt).
+- Docker components are also available in the repo.
+- All the documentation may be found in final report.
+
