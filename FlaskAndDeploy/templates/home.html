@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<title>Personality Analysis</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="static/css/style.css?v=1.33">
+
+<body style="background-image: url('static/images/simple_bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;">
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px; margin-top:2em;">
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+  <h1 class="super">Personality Analysis</h1>
+  <p class="w3-center description"> The application allows to analyze a writing
+    example of a person to glean an insight on their personality type.
+    No special preprocessing of the text is necessary, just insert it in the field below.
+  </p>
+
+</header>
+
+<!-- Form Input -->
+<div class="w3-center">
+	<form class="form-inline" action="{{ url_for('my_form_post')}}" method="post">
+        <label class="input_label" for="text_input">Input:</label>
+        <textarea type="text" name="text_input" class="textarea" id="text_input">
+        </textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2><br>{{prediction_string}}<br></h2>
+    <br>{{category}}<br>
+    {{topic}}
+
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
+
+  <p>Built by <a href="https://www.github.com/JohnBounty" target="_blank" class="w3-hover-text-green">Vadym</a></p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Compiled source #
+
+*.pages
+*.exe
+*.out
+*.key
+*.docx
+
+
+# =================
+# Data 
+
+*.csv
+
+# =================
+FlaskAndDeploy/app_env/
+FlaskAndDeploy/dock_env/
